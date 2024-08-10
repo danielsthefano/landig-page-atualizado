@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com"> <!--  &gt;  mudar para -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/elements.css">
+  <link rel="stylesheet" href="assets/css/classes.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- <link rel="stylesheet" href="BannerUL/assets/css/style.css"> -->
+</head>
+
+<body>
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
+  <aside id="logo" class="menu white-bg">
+    <div class="main-content menu-content">
+      <h1><a href="#intro">MOJANG</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#intro">intro</a></li>
+          <li><a href="#top3">top 3</a></li>
+          <li><a href="#grid-one">instalar</a></li>
+          <li><a href="#gallery">Dicas</a></li>
+          <li><a href="#pricing">preço</a></li>
+          <li><a href="#contact">contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+  <!-- Parte 3 -->
+  <div id="intro" class="menu-spacing"></div>
+  <section class="intro main-bg ">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>MINECRAFT</h2>
+        <p>Minecraft é um jogo eletrônico sandbox de sobrevivência criado pelo desenvolvedor sueco Markus "Notch"
+          Persson e posteriormente desenvolvido e publicado pela Mojang Studios, cuja propriedade intelectual foi obtida
+          pela Microsoft em 2014. </p>
+      </div>
+      <!-- <div class="intro-img">
+        <img src="" alt="">
+      </div> -->
+      <div class="banner">
+        <img src="assets/img/Minecraft-1.jpg" id="bannerImage" alt="banner 1">
+      </div>
+    </div>
+  </section>
+  <!-- parte 3 2.0 -->
+  <section id="top3" class="alo">
+    <div class="main-content top3-content">
+      <h2>3 motivos do por que você deveria jogar Minecraft</h2>
+      <p>Criatividade Ilimitada: Minecraft oferece liberdade total para construir o que quiser, estimulando a exploração
+        e a experimentação.</p>
+      <p>Aventura e Exploração: Você pode explorar cavernas, enfrentar monstros e descobrir tesouros, adicionando emoção
+        à sua jornada no jogo.</p>
+      <p>Comunidade Ativa: Com milhões de jogadores em todo o mundo, a comunidade do Minecraft oferece oportunidades
+        para compartilhar, colaborar e se socializar em um ambiente inspirador.</p>
+    </div>
+  </section>
+  <!-- parte 4 -->
+  <section id="grid-one" class="gride-one main-bg ">
+    <div class="main-content grid-one-content">
+      <!-- div estava errada correção -->
+      <h2 class="grid-main-heading">Como instalar Minecraft</h2>
+      <p class="grid-description"></p>
+      <div class="grid">
+        <article>
+          <h3>Passo 1</h3>
+          <p>Compre o jogo a partir do nosso site</p>
+        </article>
+        <article>
+          <h3>Passo 2</h3>
+          <p>depois que a compra for bem sucedida instale ele em seu eletrônico</p>
+        </article>
+        <article>
+          <h3>Passo 3</h3>
+          <p>faça login no jogo com sua conta e jogue</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- part 4.2 -->
+  <!-- source.unsplash.com/random/360x360 -->
+  <section id="gallery" class="grid-one ola ">
+    <div class="main-content grid-one-content">
+      <!-- div estava errada correção -->
+      <h2 class="grid-main-heading">Dicas para iniciantes</h2>
+      <p class="grid-description">clique em uma das imagens</p>
+      <div class="grid">
+        <div class="gallery-img">
+          <img src="assets/img/Minecraft-1.jpg" height="360" width="360" alt=""
+            onclick="openModal('assets/img/Minecraft-1.jpg')">
+        </div>
+        <div class="gallery-img">
+          <img src="assets/img/6032dddb-85c5-4f30-8475-ccbef3039acd.jpg" height="360" width="360" alt=""
+          onclick="openModal('assets/img/6032dddb-85c5-4f30-8475-ccbef3039acd.jpg')">
+        </div>
+        <div class="gallery-img">
+          <img src="assets/img/oi.webp" height="360" width="360" alt="random"
+          onclick="openModal('assets/img/oi.webp')">
+        </div>
+        <div class="gallery-img">
+          <img src="http://source.unsplash.com/random/360x360?r=4" alt="gameplays">
+        </div>
+        <div class="gallery-img">
+          <img src="http://source.unsplash.com/random/360x360?r=5" alt="multiplay">
+        </div>
+        <div class="gallery-img">
+          <img src="http://source.unsplash.com/random/360x360?r=6" alt="curiosidades">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- parte da tabela -->
+  <section id="pricing" class="oi">
+    <div class="main-content top4-content">
+      <h2>Preços</h2>
+      <p>os preços da compra serão diferentes dependendo do produto</p>
+      <p></p>
+      <div class="responsive-table">
+        <!-- tabela responsiva pra nos poder rolar nela -->
+        <!-- elements para configurar as tags -->
+        <table>
+          <caption>Tabela de preços</caption>
+          <thead>
+            <tr>
+              <th>celular</th>
+              <th>playstaytion</th>
+              <th>computador</th>
+              <th>nintendo</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>37,99 R$</td>
+              <td>37,95 R$</td>
+              <td>148,25 R$</td>
+              <td>225,72 R$</td>
+              <td>custo</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parte conteact! -->
+
+  <div id="contact" class="menu-spacing"></div>
+  <section class="intro main-bg ">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>oi</h2>
+        <p>Caso ocorra algum problema no jogo ou no processo de instalação do jogo coloque as informações abaixo e sua
+          reclamação</p>
+      </div>
+      <div class="intro-img">
+        <img src="assets/img/" alt="">
+      </div>
+
+      <div class="contact-form">
+        <form id="form">
+          <fieldset class="form-grid">
+            <legend>Contate-nos</legend>
+
+            <div class="form-group">
+              <label for="first-name">Primeiro nome</label>
+              <input type="text" name="name" id="first-name" placeholder="Your first name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="last-name">Segundo nome</label>
+              <input type="text" name="sobrenome" id="last-name" placeholder="Your last name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="text" name="email" id="email" placeholder="Your e-mail" required>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="message">Mensagem</label>
+              <textarea name="message" id="message" rows="10" placeholder="Your message"></textarea>
+            </div>
+
+            <div class="form-group full-width">
+              <button type="submit">Send message</button>
+            </div>
+            <div id="buttons-row">
+              <div class="buttons">
+                <button type="submit" id="send">Send</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="footer white-bg">
+    <p><a href=""><span class="span"> &copy;</span> 2024 Exemplo de Site. Todos os
+        direitos reservados.</a></p>
+        
+  </footer>
+  <a class="back-to-top" href="#"></a>
+  <div class="modal" id="myModal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+  <script src="BannerUL/assets/js/script.js"></script>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+        emailjs.init("V8WPWptUGdSrvYYpy");
+    })();
+</script>
+<script>
+    document.getElementById('form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        emailjs.sendForm('service_45chyk8', 'template_rc2q9f7', this)
+            .then(function () {
+                alert('Email enviado com sucesso!');
+            }, function (error) {
+                alert('Erro ao enviar o email: ' + JSON.stringify(error));
+            });
+    });
+</script>
+</body>
+
+</html>

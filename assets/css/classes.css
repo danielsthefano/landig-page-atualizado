@@ -1,0 +1,56 @@
+.main-bg {
+  background-image: url('../img/811461b8d1cacf1f2da791b478dccfe2a55457780364c3d5a95fbfcdd4c3086f\ \(1\).avif');
+  background-size: cover;
+  background-position: center center;
+  color: red;
+}
+
+ .oi {
+  background-image: url('../img/6032dddb-85c5-4f30-8475-ccbef3039acd.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: rgb(255, 255, 255);
+}
+
+.ola {
+  background-image: url('../img/olokomeu.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: rgb(255, 0, 0);
+}
+
+.alo {
+  background-image: url('../img/oloko.jpg');
+  background-size: cover;
+  background-position: center center;
+  color: rgb(255, 0, 0);
+}
+
+.white-bg {
+  color: var(--white-color);
+}
+
+.main-content {
+  max-width: 120rem;
+  /* 120rem = 1200px */
+  margin: 0 auto;
+  /* padding: 3rem; */
+  padding: 10rem var(--gap);
+  /* correção */
+}
+
+.section {
+  min-height: 100vh;
+  /* parte 3/4 */
+  /* color: var(--primary-color); */
+}
+
+/* parte 3 */
+.menu-spacing {
+  height: 6.5rem;
+}
+
+body .full-width{
+  width: 100%;
+  flex: 1 1 100%;
+}
